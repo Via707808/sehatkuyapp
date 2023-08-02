@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addactivity.AddObat">
+
+    <TextView
+        android:id="@+id/tv_namaobat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Obat"
+        />
+
+    <EditText
+        android:id="@+id/et_namaobat"
+        android:layout_below="@+id/tv_namaobat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan nama obat..."/>
+
+    <TextView
+        android:id="@+id/tv_hargaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Per"
+        android:layout_below="@id/et_namaobat"
+        />
+
+    <EditText
+        android:id="@+id/et_spesialis2"
+        android:layout_below="@+id/tv_hargaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan harga per..."/>
+
+    <TextView
+        android:id="@+id/tv_harga1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga"
+        android:layout_below="@+id/et_spesialis2"
+        />
+
+    <EditText
+        android:id="@+id/et_harga1"
+        android:layout_below="@+id/tv_harga1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan harga..."/>
+
+    <TextView
+        android:id="@+id/tv_dibeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dibeli"
+        android:layout_below="@+id/et_harga1"
+        />
+
+    <EditText
+        android:id="@+id/et_dibeli"
+        android:layout_below="@+id/tv_dibeli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan total pembeli"/>
+
+    <TextView
+        android:id="@+id/tv_kategori1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:layout_below="@+id/et_dibeli"
+        />
+
+    <EditText
+        android:id="@+id/et_kategori1"
+        android:layout_below="@+id/tv_kategori1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan kategori..."/>
+
+    <TextView
+        android:id="@+id/tv_diskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diskon"
+        android:layout_below="@+id/et_kategori1"
+        />
+
+    <EditText
+        android:id="@+id/et_diskon"
+        android:layout_below="@+id/tv_diskon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan diskon"/>
+
+    <ImageView
+        android:id="@+id/iv_preview_obat"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/et_diskon"
+        android:src="@drawable/ic_add_image"
+        android:visibility="invisible"/>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_image"
+            />
+
+        <Button
+            android:id="@+id/btn_kirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kirim"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

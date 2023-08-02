@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addactivity.AddPojokKesehatan">
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Judul"
+        />
+
+    <EditText
+        android:id="@+id/et_judul"
+        android:layout_below="@+id/tv_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan judul..."/>
+
+    <TextView
+        android:id="@+id/tv_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:layout_below="@id/et_judul"
+        />
+
+    <EditText
+        android:id="@+id/et_kategori"
+        android:layout_below="@+id/tv_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan kategori..."/>
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi"
+        android:layout_below="@+id/et_kategori"
+        />
+
+    <EditText
+        android:id="@+id/et_deskripsi"
+        android:layout_below="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan deskripsi..."/>
+
+    <ImageView
+        android:id="@+id/iv_preview_pojok"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/et_deskripsi"
+        android:src="@drawable/ic_add_image"
+        android:visibility="invisible"/>
+
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_image"
+            />
+
+        <Button
+            android:id="@+id/btn_kirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kirim"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

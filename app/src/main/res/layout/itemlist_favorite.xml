@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_obat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@drawable/pic_obatclaritin"
+        android:background="@drawable/radius_all_nosolid"
+        />
+    <ImageView
+        android:id="@+id/iv_obat2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:background="@drawable/radius_all_nosolid"
+        />
+
+    <TextView
+        android:id="@+id/tv_namaobat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_obat"
+        android:text="Tips and Trik"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

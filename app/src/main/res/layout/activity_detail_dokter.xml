@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetailDokter">
+
+    <RelativeLayout
+        android:id="@+id/rl_dokter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:id="@+id/ll_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Ranking"
+
+                />
+            <LinearLayout
+                android:id="@+id/ll_ranking2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_ranking"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_peringkatbiru"
+                    />
+                <TextView
+                    android:id="@+id/tv_ranking2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rank \n   1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_dokter"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_profil"
+            android:layout_toRightOf="@id/ll_ranking"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            >
+            <TextView
+                android:id="@+id/tv_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor STR"
+                />
+            <TextView
+                android:id="@+id/tv_strnomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="55570034567789"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_online"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:tint="@color/bluev"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_circle"
+            android:layout_toRightOf="@+id/iv_dokter"
+            android:layout_alignBottom="@+id/iv_dokter"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="online"
+            android:layout_toRightOf="@+id/iv_online"
+            android:layout_alignBottom="@+id/iv_dokter"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_namadokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_dokter"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_namadokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selvie"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_spesialis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dokter Spesialis Kandungan"
+            android:layout_below="@+id/tv_namadokter"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_namadokter"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="10dp">
+
+            <Button
+                android:id="@+id/buttonchat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bluev"
+                android:text="Chat Sekarang"
+                android:textSize="20dp"
+                />
+            <RelativeLayout
+                android:id="@+id/rl_pencapaian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius_allwhite"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_iii"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_pencapaian"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_awardbiru"
+                        />
+                    <TextView
+                        android:id="@+id/tv_pencapaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bluevi"
+                        android:layout_toRightOf="@id/iv_pencapaian"
+                        android:text="Pencapaian Tahun Ini"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/bluev"
+                    android:layout_below="@+id/ll_iii"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_award"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/view"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/ll_ll3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/tv_award1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paling baik"
+                            android:layout_centerVertical="true"
+                            android:padding="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_allbluev"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_ll4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/tv_award5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paling aktif"
+                            android:layout_centerVertical="true"
+                            android:padding="10dp"
+                            android:layout_marginHorizontal="30dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_allbluev"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_ll5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/tv_award3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profesional"
+                            android:layout_centerVertical="true"
+                            android:padding="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_allbluev"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ll_award"
+                    android:layout_weight="3"
+                    android:layout_marginTop="10dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/ll_ll7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        >
+                        <TextView
+                            android:id="@+id/tv_award"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fast Respons"
+                            android:layout_centerVertical="true"
+                            android:padding="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_allbluev"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_ll8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/tv_award2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recomended"
+                            android:layout_centerVertical="true"
+                            android:padding="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/radius_allbluev"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_komentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_pencapaian"
+                android:background="@drawable/radius_allwhite"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_star"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_starkuning"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_star1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_starkuning"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_star2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_starkuning"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_star3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_starkuning"
+                        android:layout_marginRight="5dp"/>
+                    <ImageView
+                        android:id="@+id/iv_star4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_starkuning"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/iv_star5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5.0 / 5.0"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_melayani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telah melayani 2.700 pasien"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_komentar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem Ipsum ....."
+                    android:padding="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ll_star"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/radius_allbluev"/>
+
+                <ImageView
+                    android:id="@+id/iv_arrow4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrowbiru"
+                    android:layout_toRightOf="@+id/tv_komentar2"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_jadwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radius_allwhite"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_jadwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jadwal Operasional"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluevi"
+                    />
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/bluev"
+                    android:layout_below="@+id/tv_jadwal"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_hariselasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view2"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_jadwaharian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selasa 13 Agustus 2023"
+
+                        />
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_harirabu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_hariselasa"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_jadwaharian2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rabu 14 Agustus 2023"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_arrow3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_arrow_down"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_praktek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_hariselasa"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_allwhite"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_praktekharian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat Praktik"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluevi"
+                    />
+                <ImageView
+                    android:id="@+id/iv_arrow2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_riwayat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_praktek"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_allwhite"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_riwayat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Riwayat Pendidikan"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluevi"
+                    />
+                <ImageView
+                    android:id="@+id/iv_riwayat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_pengalaman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_praktek"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radius_allwhite"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_pengalaman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengalaman dan Kualifikasi"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluevi"
+                    />
+                <ImageView
+                    android:id="@+id/iv_pengalaman"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

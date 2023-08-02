@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SehatKuyTeam"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.DetailChat"
+            android:exported="false" />
+        <activity
+            android:name=".DetailDokter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Profil"
+            android:exported="false" />
+        <activity
+            android:name=".addactivity.AddPojokKesehatan"
+            android:exported="false" />
+        <activity
+            android:name=".addactivity.AddObat"
+            android:exported="false" />
+        <activity
+            android:name=".addactivity.AddDokter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PojokKesehatan"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Obat"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Dokter"
+            android:exported="false" />
+        <activity
+            android:name=".addactivity.AddTopik"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Topik"
+            android:exported="false" />
+        <activity
+            android:name=".addactivity.AddDiskusi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Diskusi"
+            android:exported="false" />
+        <activity
+            android:name=".loginframe.Login"
+            android:exported="false" />
+        <activity
+            android:name=".loginframe.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".loginframe.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

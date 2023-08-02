@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main_dokter"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profil_dokter"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_profil"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/civ_profil_dokter"
+        android:layout_marginLeft="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_namadokter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selvie"
+
+            />
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 35.000"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrowbiru"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

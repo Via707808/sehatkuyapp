@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_nav2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_profil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_profil"/>
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/civ_profil"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+            <TextView
+                android:id="@+id/tv_namauser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selvie"
+
+                />
+            <TextView
+                android:id="@+id/tv_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 detik"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/ic_bluethreedots"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_nav2">
+
+        <TextView
+            android:id="@+id/tv_text_kuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum......."
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/iv_diskusi_kuy"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aimainmenu"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_nav3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_i"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_komentar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_komentarbiru"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_komentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.30k"
+            android:layout_toRightOf="@+id/iv_komentar"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:padding="3dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_heartmerahpenuh"
+            android:layout_toRightOf="@+id/tv_komentar"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.30k"
+            android:layout_toRightOf="@+id/iv_like"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:padding="3dp"/>
+        <ImageView
+            android:id="@+id/iv_rekuy"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_replybiru"
+            android:layout_toRightOf="@+id/tv_jumlah_like"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_rekuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.30k"
+            android:layout_toRightOf="@+id/iv_rekuy"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:padding="3dp"/>
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_sharebiru"
+            android:layout_toRightOf="@+id/tv_rekuy"
+            android:padding="3dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blueii"
+        android:layout_below="@+id/rl_nav3"/>
+
+</RelativeLayout>

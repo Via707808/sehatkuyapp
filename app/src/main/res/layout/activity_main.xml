@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginframe.MainActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:background="@drawable/aisehatkuy"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/frameiii"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SehatKuy"
+        android:textStyle="bold"
+        android:layout_marginTop="420dp"
+        android:textColor="@color/bluevi"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bluevi"
+        android:text="Sehat Bersama, Sehat Satu Indonesia"/>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="530dp"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_sign_up"
+            android:text="LOGIN"
+            android:backgroundTint="@color/bluev"/>
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="SIGN UP"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/blueii"
+            android:textColor="@color/bluev"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

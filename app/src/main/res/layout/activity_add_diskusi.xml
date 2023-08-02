@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addactivity.AddDiskusi">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profil"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_profil"/>
+
+    <EditText
+        android:id="@+id/et_tekskuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tulis Kuy....."
+        android:layout_toRightOf="@+id/iv_profil"
+        />
+    <ImageView
+        android:id="@+id/iv_preview_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/iv_profil"
+        android:src="@drawable/ic_add_image"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_image"
+            />
+
+        <Button
+            android:id="@+id/btn_kirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kirim"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

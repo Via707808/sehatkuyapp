@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_marginBottom="12dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_obat"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:src="@drawable/pic_obatclaritin"
+        />
+    <TextView
+        android:id="@+id/tv_vitamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Vitamin"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        android:background="@drawable/radius_topleft_bottomright"/>
+
+    <TextView
+        android:id="@+id/tv_diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:textSize="12dp"
+        android:text="20% \n off"
+        android:textColor="@color/white"
+        android:background="@drawable/radius_topright_bottomleft"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_namaobat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsun"
+        android:layout_below="@id/iv_obat"
+        android:textSize="15dp"
+
+        />
+    <TextView
+        android:id="@+id/tv_hargaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga per"
+        android:layout_below="@id/tv_namaobat"
+        android:textSize="15dp"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_kotak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kotak"
+        android:textSize="15dp"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/tv_namaobat"
+        android:layout_toRightOf="@id/tv_hargaper"
+        />
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 20.000"
+        android:layout_below="@id/tv_kotak"
+        android:textSize="15dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_bintang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_harga"
+        >
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_starkuning"
+                android:layout_marginRight="5dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_starkuning"
+                android:layout_marginRight="5dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_starkuning"
+                android:layout_marginRight="5dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_starkuning"
+                android:layout_marginRight="5dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_starkuning"
+                android:layout_marginRight="5dp"/>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_jumlah_dibeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2500"
+            android:textSize="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/tv_dibeli"
+            />
+
+        <TextView
+            android:id="@+id/tv_dibeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dibeli"
+            android:layout_alignParentRight="true"
+            android:textSize="10dp"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

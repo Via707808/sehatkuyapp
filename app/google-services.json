@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695606604374",
+    "project_id": "sehatkuyteam",
+    "storage_bucket": "sehatkuyteam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695606604374:android:7e75462717ce82928381f7",
+        "android_client_info": {
+          "package_name": "com.example.sehatkuyteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695606604374-imfjcl0073rvejn5i0d1dhu79hha3utm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwj4hZW1aYD7iJjLFobgFkb0WuY_YL6C8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695606604374-imfjcl0073rvejn5i0d1dhu79hha3utm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailChat"
+    android:background="@color/blueiv">
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="15dp"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bluearrow"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_profil"
+            android:layout_toRightOf="@id/iv_back"
+            android:layout_marginRight="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iv_profil"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/tv_nama4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dokter"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_online"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    app:tint="@color/bluevi"
+                    android:src="@drawable/ic_circle"
+                    android:layout_toRightOf="@+id/iv_dokter"
+                    android:layout_alignBottom="@+id/iv_dokter"
+                    android:layout_marginTop="6dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="online"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/iv_online"
+                    android:layout_alignBottom="@+id/iv_dokter"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_back"
+        android:background="@drawable/radius_topwhite"/>
+
+    <TextView
+        android:id="@+id/tv_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble"
+        android:text="Selamat malam, Kak"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:padding="20dp"
+        android:textColor="@color/bluevi"
+        android:layout_below="@+id/rl_back"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_bubble2"
+        android:layout_below="@+id/tv_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bubble2"
+        android:text="Selamat malam juga, kak \n ada yang bisa saya bantu?" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_back"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radius_allbluev"
+            >
+            <ImageView
+                android:id="@+id/iv_emote"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_emoteputih"
+                android:padding="10dp"
+                />
+            <EditText
+                android:id="@+id/et_pesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_emote"
+                android:layout_toLeftOf="@id/iv_tautan"
+                android:textColorHint="@color/white"
+                android:hint="Tulis Pesan..."/>
+
+            <ImageView
+                android:id="@+id/iv_tautan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_whitelink"
+                android:layout_toLeftOf="@+id/iv_photo"
+                android:padding="10dp"
+                />
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_camera"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
